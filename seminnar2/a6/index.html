@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+    <title>Find Prime numbers</title>
+
+
+    <!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers msdt:dt="string">Prof. Bhakti Ahirwadkar;Parmeet.Gill</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers>
+<mso:SharedWithUsers msdt:dt="string">17;#Prof. Bhakti Ahirwadkar;#9;#Parmeet.Gill</mso:SharedWithUsers>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body bgcolor="Teal">
+    <h1 style="font-size: 40px;"> Find Prime Numbers within the range</h1>
+    <p id="demo1" ;
+        style="background-color:rgb(77, 21, 20);font-style:italic;color:snow;font-family: 'Courier New', Courier, monospace; font-size: x-large;max-width:700px;">
+        Prime Numbers are:</p>
+    <hr> <br><br>
+
+
+
+    <script>
+        function findprime(n1, n2) {
+            const output = [];
+            var k = 0;
+            for (let i = n1; i <= n2; i++) {
+                let flag = 0;
+                for (let j = 2; j < i; j++) {
+                    if (i % j == 0) {
+                        flag = 1;
+                        break;
+                    }
+                }
+
+                // if number greater than 1 and not divisible by other numbers
+                if (i > 1 && flag == 0) {
+
+                    output[k++] = i;
+                }
+            }
+            alert("Prime numbers are:-> " + output);
+            document.getElementById("demo1").innerHTML = "Prime Numbers between (" + n1 + "  and  " + n2 + "  )" + "are  " + output;
+        }
+        const start = parseInt(prompt("Enter the starting number"));
+        const end = parseInt(prompt("Enter the Ending number"));
+        console.log(findprime(start, end))
+            //document.getElementById("demo1").innerHTML = " Prime Nos between  :->" + "  " + n1 + "  " + " and  " + "  " + n2 + "  " + findprime(n1, n2);
+    </script>
+</body>
+
+</html>
