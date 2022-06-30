@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Simple web Development Template</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+
+        .background {
+            background: black;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 180px;
+            border-radius: 50px;
+        }
+
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-list li a:hover {
+            color: grey;
+        }
+
+        .rightnav {
+            width: 30%;
+            text-align: right;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+        }
+
+        .firstsection {
+            background-color: grey;
+            height: 400px;
+        }
+
+        .secondsection {
+            background-color: blue;
+            height: 400px;
+        }
+
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            max-width: 80%;
+            margin: auto;
+            height: 80%;
+        }
+
+        .firsthalf {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .secondhalf {
+            width: 30%;
+        }
+
+        .secondhalf img {
+            width: 70%;
+            border: 4px solid white;
+            border-radius: 150px;
+            display: block;
+            margin: auto;
+        }
+
+        .text-big {
+            font-family: 'Piazzolla', serif;
+            font-weight: bold;
+            font-size: 35px;
+        }
+
+        .text-small {
+            font-size: 18px;
+        }
+
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+        }
+
+        .section {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 90%;
+            margin: auto;
+        }
+
+        .section-Left {
+            flex-direction: row-reverse;
+        }
+
+        .paras {
+            padding: 0px 65px;
+        }
+
+        .thumbnail img {
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 26px;
+            margin-top: 19px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .text-footer {
+            text-align: center;
+            padding: 30px 0;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <a name="top"></a>
+
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="mit.png">
+            </div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#program">Deartment of CSE</a></li>
+
+        </ul>
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="home">Marathwada Institute of Technology</h1>
+                <p class="text-small">
+                    "Marathwada Institute of Technology has been established in 1984 to cater the technical education in
+                    the rural part of Maharashtra. The institution spreads over 13 acres of land with separate hostel
+                    facilities for girls and boys. This Institute is approved by AICTE, New Delhi and is affiliated to
+                    Dr. Babasaheb Ambedkar Technological University, Lonere, Raigarh, Maharashatra, the state technical
+                    university popularly known as BATU. The institution offers B. Tech. programmes in five disciplines
+                    and an Architecture program. Post-Graduation programs are also offered in Engineering & Technology,
+                    Computer Applications and Architecture. The Institute has a University recognized Ph.D. Research
+                    Center in Mechanical Engineering and Civil Engineering. More than 2500 full time & part time
+                    students are on campus for availing graduate and post graduate education and doing Ph.D. research.
+                    The institute has excellent quality infrastructure with well-equipped laboratories. Well qualified
+                    faculties from IITs, NITs and reputed organizations are available in the institute. The faculty
+                    members are motivated and dedicated to create and provide a conducive learning environment in the
+                    Institute. Institute participates in national and international exhibitions and presents students
+                    projects and research contributions/activities where the institute has been recognized by the
+                    organizers and won prizes at national level. Students are encouraged to actively participate in
+                    National and State level co-curricular and extracurricular activities like SAE BAJA, SUPRA, ROBOCON
+                    etc."
+                      
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="program">
+                    Department of Computer Science and Engineering
+                </h1>
+                <p class="text-small">
+                    The Department of Computer Science and Engineering is committed to providing quality education to
+                    the students through innovative methods of teaching and practical orientation. We are working hard
+                    to develop our students as leaders, innovators and technologists at international level. The
+                    department has highly qualified and experienced faculty and we are continuously working on improving
+                    the quality of teaching and learning to impart high standard education to the students in
+                    comprehensible ways.
+                    The department has excellent infrastructure which provides an encouraging environment for achieving
+                    academic excellence.The department provides industry driven trainings and international
+                    certifications through its strong industrial collaborations. We regularly conduct workshops,
+                    trainings and technical talks for faculties and students to keep them acquainted with latest
+                    technological developments. We focus on improving the soft skills, aptitude and overall personality
+                    development of the students to make them globally competitive. The department provides healthy
+                    environment for interaction amongst its stakeholders.
+
+                </p>
+                <a href="https://engg.mit.asia/dept.php?id=4&dept=CSE&Computer%20Science%20and%20Engineering"><img
+                        src="csed.jpg" alt="Department of CSE" style="width:400px;height:100px;"></a>
+
+            </div>
+        </div>
+    </section>
+    <a href="#top">Back to top of page</a>
+
+    <footer class="background">
+        <p class="text-footer">
+            Copyright ©-All rights are reserved
+        </p>
+    </footer>
+</body>
+
+</html>
