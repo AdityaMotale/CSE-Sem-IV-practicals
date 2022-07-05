@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../global.css">
 </head>
-
 <body>
-    <h1>Marathwada Institute of Technology, Aurangabad</h1>
-    <form>
-        <h1 class="text-lg">REGISTRATION FORM</h1>
-        FirstName <input type="text" name="fname"> <br> <br>LastName <input type="text" name="lname"> <br> <br>EmailID
-        <input type="text" name="email"> <br> <br>Phone No <input type="text" name="phoneno"> <br><br>
-        <table>
-            <tr>
-                <th>Gender </th>
-                <td><input type="radio" name="gender" value="Male"> MALE</td>
-                <td><input type="radio" name="gender" value="Female">FEMALE</td>
+    <h2>Welcome To GFG</h2>
+    <p>Default code has been loaded into the Editor.</p>
 
+    <th>
+        <form>
+            <tr>
+                <td>
+                    <label for="name">
+                        Name
+                    </label>
+                </td>
+                <td><input type="text" id="name" />
+                </td>
             </tr>
             <tr>
-                <th> Area of Interest</th>
-                <td><input type="checkbox" name="aws" value="on">AWS Certification</td>
-                <td><input type="checkbox" name="Redhat" value="on">REDHAT Certification</td>
-                <td><input type="checkbox" name="DataScience" value="on">Data Science</td>
+                <td><label for="email">
+                        Email
+                    </label>
+                </td>
+                <td><input type="email" id="email" />
+                </td>
             </tr>
+            <tr>
+                <td><label for="telnum">
+                        Tel No.
+                    </label>
+                </td>
+                <td><input type="telnum" id="telnum" />
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Roll No.">
+                        Roll No.
+                    </label>
+                </td>
+                <td><input type="number" id="rollno" />
+                </td>
+            </tr>
+        </form>
         </table>
-        <br> Expectation
-        <br>
-        <textarea row="5" cols="50" name="Desc">Enter your expectation here</textarea>
-        <br>
-        <input type="submit" name="submit" value="Submit">
-        <input type="reset" name="Reset" value="Reset">
-    </form>
 </body>
-
 </html>

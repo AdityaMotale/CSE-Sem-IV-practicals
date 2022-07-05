@@ -1,3 +1,6 @@
+
+// LogOut functionality
+
 <?php
     session_start();
     $message="";
@@ -35,3 +38,12 @@
 </form>
 </body>
 </html>
+
+// LogOut functionality
+
+<?php
+session_start();
+unset($_SESSION["id"]);
+unset($_SESSION["name"]);
+header("Location:signin.php");
+?>

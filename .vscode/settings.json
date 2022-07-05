@@ -5,6 +5,7 @@
         "kernelspec",
         "nbconvert",
         "nbformat",
-        "pygments"
+        "pygments",
+        "telnum"
     ]
 }
